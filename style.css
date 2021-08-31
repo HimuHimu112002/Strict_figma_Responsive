@@ -1,0 +1,328 @@
+/* font-family: 'Lato', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header part start */
+header{
+    background-color: #f6f9f9;
+}
+.navbar-brand{
+   width: 25%;
+}
+ul li{
+    margin-right: 20px;
+}
+ul li a{
+    font-size: 17px;
+    color: #2d3950;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+} 
+
+/* header part end */
+
+
+/* Banner section start */
+.banner{
+    background-image: url("img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;  
+}
+.rows{
+    min-height: 90vh;
+}
+.banner h1{
+    color: white;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+.banner p{
+    padding: 25px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+.banner span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 1px solid #15a4fa;
+}
+.down{
+    position: absolute;
+    top: 80%;
+    color: white;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: updown 1s linear infinite;
+    animation-direction:alternate ;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+.btn-banner{
+    color: #fff;
+    padding: 0px;
+    padding: 10px 20px;
+    text-transform:uppercase;
+    border: none;
+    border: 1px solid #15a4fa;
+    text-align: center;
+    position: relative;
+}
+.btn-banner:hover{
+    color: white;
+}
+.btn-banner::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #15a4fa;
+    transition: 0.5s all ease-in-out;
+    position: absolute;
+    opacity: 0;
+}
+
+.btn-banner:hover::before{
+    opacity: 0.5;
+    width:100%;
+}
+
+.text{
+    background-color: #f6f9f9;
+}
+.text h1{
+    font-size: 35px;
+    color: #2d3950;
+    padding-top: 40px;
+    font-family: 'Lato', sans-serif;
+}
+.text p{
+    font-size: 17px;
+    color:#999999;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+.service{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.icon_box{
+    width: 22%;
+    height: 40%;
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,5fc3ff+51,48baff+51,48baff+53,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #5fc3ff 51%, #48baff 51%, #48baff 53%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#5fc3ff 51%,#48baff 51%,#48baff 53%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#5fc3ff 51%,#48baff 51%,#48baff 53%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.icon_box i{
+    color: white;
+    font-size: 25px;
+}
+.service h1{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #2d3950;
+    text-transform: uppercase;
+}
+.service p{
+    padding: 0;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 80px;
+}
+
+.work{
+    background-color: #f6f9f9;
+}
+.work h1{
+    font-size: 35px;
+    color: #2d3950;
+    font-family: 'Lato', sans-serif;
+}
+.work p{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: #909090;
+}
+.img{
+    position: relative;
+}
+.img img{
+    width: 100%;
+}
+.img::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #15a4fa;
+    transition: 0.6s all ease-in-out;
+    opacity: 0;
+}
+.img:hover::before{
+    opacity: 0.4;
+    width:100%;
+}
+.icon_list{
+    width: 0%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: 0.6s all ease-in-out;
+}
+.img:hover .icon_list{
+    opacity: 1;
+    
+}
+.icon_list ul{
+    margin: 0;
+    padding: 0;
+    padding: 5px 5px;
+
+}
+.icon_list ul li{
+    list-style-type: none;
+    color: white;
+    height: 40px;
+    width: 35px;
+    padding: 5px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+.icon_list ul li i{
+    font-size: 25px;
+}
+.icon_list ul li i:hover{
+    color: orange;
+    cursor: pointer;
+}
+footer{
+    background-image: url("img/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 80vh;
+}
+footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2c374b;
+    opacity: .5;
+}
+.footer_contant{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer_txt h1{
+    font-size: 30px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding-top: 15px 0;
+}
+.footer_txt h5{
+    font-size: 18px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+form{
+  overflow: hidden;
+  background: transparent;
+}
+form input[type="text"]{
+    background: transparent;
+    
+}
+form input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+form textarea[name="ff"]{
+    background: transparent;
+    font-size: 20px;
+}
+.form-control:focus{
+    background: transparent;
+    outline: none;
+
+}
+form input[type="submit"]{
+    padding: 7px 30px;
+    background: transparent;
+    border: none;
+    border:  1px solid #15a4fa;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: .6s all ease-in-out;
+    float: right; 
+    color: #fff;
+}
+form input[type="submit"]:hover{
+   background-color: #15a4fa;
+   color: white;
+}
+
+.last_footer{
+    background-color: #eee5e5;
+   
+}
+.last_text{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 15vh;
+    align-items: center;
+}
+.last_text h4{
+    font-size: 20px;
+    color: #909090;
+    font-family: 'Lato', sans-serif;
+    padding-top: 10px;
+}
+.last_text ul{
+    display: flex;
+    justify-content: center; 
+}
+.last_text ul li{
+    list-style-type: none;
+    cursor: pointer;
+    color: #15a4fa;
+    font-size: 25px; 
+}
+.last_text ul li:hover{
+    color: brown;
+}
