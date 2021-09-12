@@ -1,0 +1,27 @@
+@media(min-width:320px) and (max-width:568px){
+    .icon_box{
+        width: 22%;
+        height: 40%;
+    }
+}
+@media(min-width:576px) and (max-width:1199px){
+    .icon_box{
+        width: 32%;
+        height: 40%;
+    }
+}
+@media(min-width:320px) and (max-width:490px){
+    .work h1{
+        font-size: 20px;
+    }
+}
+@media(min-width:320px) and (max-width:350px){
+    .simple_head h1{
+        font-size: 20px;
+    }
+}
+@media(min-width:320px) and (max-width:767px){
+    .navbar-nav{
+        text-align: center;
+    }
+}
