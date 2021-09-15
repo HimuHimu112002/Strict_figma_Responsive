@@ -261,10 +261,6 @@ footer::before{
     color: white;
     font-family: 'Lato', sans-serif;
 }
-form{
-  /* background: transparent; */
-}
-
 form input[type="text"]{
     background: transparent;
 }
@@ -302,7 +298,6 @@ form input[type="submit"]:hover{
    
 }
 .last_text{
-    /* height: 50px; */
     display: flex;
     justify-content: space-between;
     min-height: 15vh;
