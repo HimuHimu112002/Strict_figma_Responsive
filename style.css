@@ -233,7 +233,6 @@ footer{
     background-position: center;
     position: relative;
     min-height: 100vh;
-    overflow: hidden;
 }
 footer::before{
     content: '';
@@ -263,15 +262,13 @@ footer::before{
     font-family: 'Lato', sans-serif;
 }
 form{
-  overflow: hidden;
-  background: transparent;
+  /* background: transparent; */
 }
+
 form input[type="text"]{
     background: transparent;
-    
 }
 form input::placeholder{
-    color: white;
     font-size: 20px;
 }
 form textarea[name="ff"]{
@@ -281,7 +278,7 @@ form textarea[name="ff"]{
 .form-control:focus{
     background: transparent;
     outline: none;
-
+    color: white;
 }
 form input[type="submit"]{
     padding: 7px 30px;
