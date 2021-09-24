@@ -232,7 +232,6 @@ footer{
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 100vh;
 }
 footer::before{
     content: '';
@@ -244,11 +243,8 @@ footer::before{
     background-color: #2c374b;
     opacity: .5;
 }
-.footer_contant{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.input_section{
+    z-index: 99 !important;
 }
 .footer_txt h1{
     font-size: 30px;
@@ -260,6 +256,9 @@ footer::before{
     font-size: 18px;
     color: white;
     font-family: 'Lato', sans-serif;
+}
+.footer_contant{
+    padding: 30px 0;
 }
 form input[type="text"]{
     background: transparent;
